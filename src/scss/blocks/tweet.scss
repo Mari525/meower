@@ -1,0 +1,52 @@
+.tweet {
+  border-top: 1px solid #d3d3d3;
+  padding: 30px 0.5em;
+
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-gap: 20px;
+
+  &__img {
+    grid-row: 1 / 4;
+  }
+
+  &__handle {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+  }
+
+  &__btns {
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+
+    display: flex;
+    gap: 8px;
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    &--reply {
+      fill: #42aaff;
+    }
+
+    &--like {
+      fill: #ff0000;
+    }
+
+    &--retweet {
+      fill: #00ba00;
+    }
+  }
+}
