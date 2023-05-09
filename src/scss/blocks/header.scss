@@ -1,0 +1,13 @@
+.header {
+  padding: 20px 10px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &__heading {
+    font-size: 3rem;
+    color: #42aaff;
+  }
+}
