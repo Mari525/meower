@@ -53,8 +53,8 @@ function addTweet() {
   const tweetInput = document.getElementById('tweet-input')
   if (tweetInput.value) {
     tweetsData.unshift({
-      handle: `@RandomCoolName`,
-      profilePic: `cat.jpg`,
+      handle: `@PussInBoots`,
+      profilePic: `puss.jpg`,
       likes: 0,
       retweets: 0,
       tweetText: tweetInput.value,
