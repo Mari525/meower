@@ -63,6 +63,13 @@ function addTweet() {
       isRetweeted: false,
       uuid: uuidv4()
     })
+
+    tweetInput.value = ""
+
+    localStorage.setItem("tweets", JSON.stringify(tweetsData))
+    let array = JSON.parse(localStorage.getItem("tweets"))
+
+
     render()
   }
 
@@ -124,6 +131,12 @@ function getTweets() {
       </li>
       `
   })
+
+  // let array = JSON.parse(localStorage.getItem("tweets"))
+  // if (array) {
+  //   tweets += `AAAAAAAAAAAAAA`
+  // }
+  // console.log(tweets)
   return tweets
 }
 
